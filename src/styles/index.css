@@ -4,3 +4,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* CTA text */
+  --color-primary-light-red: hsl(356, 100%, 66%);
+  /* CTA hover background */
+  --color-primary-very-light-red: hsl(355, 100%, 74%);
+  /* headings */
+  --color-primary-very-dark-blue: hsl(208, 49%, 24%);
+  /* text */
+  --color-neutral-white: hsl(0, 0%, 100%);
+  /* footer text */
+  --color-neutral-grayish-blue: hsl(240, 2%, 79%);
+  /* body copy */
+  --color-neutral-very-dark-grayish-blue: hsl(207, 13%, 34%);
+  /* footer background */
+  --color-neutral-very-dark-black-blue: hsl(240, 10%, 16%);
+  /* Background gradient - Intro/CTA mobile nav */
+  --color-gradient-very-light-red: hsl(13, 100%, 72%);
+  --color-gradient-light-red: hsl(353, 100%, 62%);
+  /* Background gradient - body */
+  --color-gradient-very-dark-grey-blue: hsl(237, 17%, 21%);
+  --color-gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
