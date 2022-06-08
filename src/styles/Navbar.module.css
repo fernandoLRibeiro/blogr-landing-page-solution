@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3.625em 12em 0;
+}
+
+.Logo {
+  width: min-content;
+  height: min-content;
+}
+
+.buttonsContainer {
+  display: flex;
+}

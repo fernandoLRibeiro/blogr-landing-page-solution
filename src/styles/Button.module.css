@@ -1,0 +1,23 @@
+.Button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 1em 2em;
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5em;
+  color: white;
+}
+
+.primary {
+  background-color: white;
+  color: var(--color-primary-very-light-red);
+  font-weight: 700;
+}
+
+.outlined {
+  font-weight: 700;
+  outline: 1px solid white;
+}

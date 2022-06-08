@@ -21,9 +21,30 @@
   /* footer background */
   --color-neutral-very-dark-black-blue: hsl(240, 10%, 16%);
   /* Background gradient - Intro/CTA mobile nav */
-  --color-gradient-very-light-red: hsl(13, 100%, 72%);
-  --color-gradient-light-red: hsl(353, 100%, 62%);
+  --CTA-gradient: linear-gradient(
+    125deg,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
   /* Background gradient - body */
   --color-gradient-very-dark-grey-blue: hsl(237, 17%, 21%);
   --color-gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Overpass", sans-serif;
+  color: var(--color-neutral-white);
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1em;
+  margin: 0;
 }
