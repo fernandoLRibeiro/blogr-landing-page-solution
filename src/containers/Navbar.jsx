@@ -1,17 +1,49 @@
 import React from "react";
 import Button from "../components/Button";
+import SubMenu from "../components/SubMenu";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
-  return (
-    <nav className={styles.navigation}>
-      <img src="./images/logo.svg" alt="Blogr Logo" className={styles.Logo} />
+  const subMenus = [
+    {
+      label: "Product",
+      options: [
+        "Overview",
+        "Pricing",
+        "Marketplace",
+        "Features",
+        "Integrations",
+      ],
+    },
+    {
+      label: "Company",
+      options: ["About", "Team", "Blog", "Careers"],
+    },
+    {
+      label: "Connect",
+      options: ["Contact", "Newsletter", "LinkedIn"],
+    },
+  ];
 
-      <div className={styles.buttonsContainer}>
-        <Button>Login</Button>
-        <Button primary>Sign Up</Button>
-      </div>
-    </nav>
+  return (
+    <header className={styles.primaryHeader}>
+      <img src="./images/logo.svg" alt="Blogr Logo" className={styles.Logo} />
+      <nav className={styles.navigation}>
+        <ul className={styles.mainMenu}>
+          {subMenus.map((subMenu, index) => (
+            <SubMenu
+              label={subMenu.label}
+              options={subMenu.options}
+              key={index}
+            />
+          ))}
+        </ul>
+        <div className={styles.buttonsContainer}>
+          <Button>Login</Button>
+          <Button primary>Sign Up</Button>
+        </div>
+      </nav>
+    </header>
   );
 };
 

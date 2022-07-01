@@ -1,12 +1,11 @@
 .CTA {
   background: url("../../public/images/bg-pattern-intro-desktop.svg"),
     var(--CTA-gradient);
-  background-position: 22% 52%;
-
+  background-position: 27% 53%;
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-bottom-left-radius: 5em;
+  border-bottom-left-radius: 10em;
 }
 
 .textContainer {

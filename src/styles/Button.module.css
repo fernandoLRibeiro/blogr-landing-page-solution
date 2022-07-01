@@ -2,13 +2,16 @@
   background-color: transparent;
   border: 0;
   outline: 0;
-  padding: 1em 2em;
+  padding: 1em 0;
+
   font-size: 1em;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   cursor: pointer;
   border-radius: 5em;
   color: white;
+  transition: all 0.1s ease-in;
+  min-width: 9em;
 }
 
 .primary {
@@ -17,7 +20,17 @@
   font-weight: 700;
 }
 
+.primary:hover {
+  background-color: var(--color-primary-very-light-red);
+  color: var(--color-neutral-white);
+}
+
 .outlined {
   font-weight: 700;
   outline: 1px solid white;
+}
+
+.outlined:hover {
+  background-color: white;
+  color: var(--color-primary-very-light-red);
 }

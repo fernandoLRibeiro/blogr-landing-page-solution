@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const CTA = () => {
   return (
-    <header className={styles.CTA}>
+    <main className={styles.CTA}>
       <Navbar />
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
@@ -19,7 +19,7 @@ const CTA = () => {
           <Button outlined>Learn More</Button>
         </div>
       </div>
-    </header>
+    </main>
   );
 };
 
