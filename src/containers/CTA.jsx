@@ -9,8 +9,8 @@ const CTA = () => {
       <Navbar />
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
-          <h1>A modern publishing platform</h1>
-          <p className="subtitle">
+          <h1 className={styles.heading}>A modern publishing platform</h1>
+          <p className={styles.subtitle}>
             Grow your audience and build your online brand
           </p>
         </div>

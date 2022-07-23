@@ -1,8 +1,8 @@
 .primaryHeader {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-end; */
-  margin: 3.75em 11.5em 0;
+  align-items: center;
+  margin: 3.75em 10em 0;
 }
 
 .navigation {
@@ -15,7 +15,7 @@
 .mainMenu {
   list-style: none;
   display: flex;
-  width: 35%;
+  gap: 2em;
   justify-content: space-between;
 }
 
@@ -26,4 +26,5 @@
 
 .buttonsContainer {
   display: flex;
+  gap: 2rem;
 }
