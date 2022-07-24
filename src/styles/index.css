@@ -22,7 +22,7 @@
   --color-neutral-very-dark-black-blue: hsl(240, 10%, 16%);
   /* Background gradient - Intro/CTA mobile nav */
   --CTA-gradient: linear-gradient(
-    100deg,
+    99.85deg,
     hsl(13, 100%, 72%),
     hsl(353, 100%, 62%)
   );

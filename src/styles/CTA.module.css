@@ -1,7 +1,7 @@
 .CTA {
   background: url("../../public/images/bg-pattern-intro-desktop.svg"),
     var(--CTA-gradient);
-  background-position: 25.5% 52%;
+  background-position: -440px -1342px, 0 0;
   display: flex;
   flex-direction: column;
   width: 100%;
