@@ -7,7 +7,7 @@
   background-position: -212px -509px, 0 0;
   border-radius: 0px 100px;
   align-items: center;
-  margin-top: 4.375rem;
+  margin: 4.25rem 0 4.125rem;
   justify-content: space-between;
   gap: 3.625rem;
   padding: 0 10.875rem 0 7.875rem;
@@ -16,6 +16,7 @@
 .image {
   width: fit-content;
   height: fit-content;
+  margin-top: 2.5rem;
 }
 
 .article {

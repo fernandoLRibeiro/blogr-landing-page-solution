@@ -6,6 +6,23 @@ import styles from "../styles/SubMenu.module.css";
 const SubMenu = ({ label, options }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  window.addEventListener("resize", () => {
+    console.log(window.outerWidth);
+    if (window.outerWidth <= 810) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  });
+
+  useEffect(() => {
+    if (window.outerWidth <= 810) {
+      setIsMobile(true);
+    }
+  }, []);
+
   useEffect(() => {
     console.log(isOpen);
   }, [isOpen]);
@@ -15,7 +32,11 @@ const SubMenu = ({ label, options }) => {
       <a className={styles.mainLink} onClick={() => setIsOpen(!isOpen)}>
         {label}
         <img
-          src="./images/icon-arrow-light.svg"
+          src={
+            isMobile
+              ? "./images/icon-arrow-dark.svg"
+              : "./images/icon-arrow-light.svg"
+          }
           alt="arrow icon"
           className={`${styles.icon} ${isOpen && styles.iconOpen}`}
         />

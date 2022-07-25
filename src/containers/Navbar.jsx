@@ -31,7 +31,9 @@ const Navbar = () => {
   return (
     <header className={styles.primaryHeader}>
       <img src="./images/logo.svg" alt="Blogr Logo" className={styles.Logo} />
-      <nav className={styles.navigation}>
+      <nav
+        className={`${styles.navigation} ${isOpen && styles.navigationOpen}`}
+      >
         <ul className={styles.mainMenu}>
           {subMenus.map((subMenu, index) => (
             <SubMenu
@@ -42,8 +44,10 @@ const Navbar = () => {
           ))}
         </ul>
         <div className={styles.buttonsContainer}>
-          <Button>Login</Button>
-          <Button primary>Sign Up</Button>
+          <Button login>Login</Button>
+          <Button primary signUp>
+            Sign Up
+          </Button>
         </div>
       </nav>
 

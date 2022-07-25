@@ -1,76 +1,144 @@
-.subMenu {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
+.subMenu::after {
+  height: 0;
+  width: 0;
 }
 
 .mainLink {
   display: flex;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 0.875rem;
-  gap: 0.5rem;
-  letter-spacing: 0.09em;
-  font-weight: 500;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  justify-content: center;
   align-items: center;
-  padding: 1em 0;
+  letter-spacing: -0.01em;
+  gap: 0.5rem;
+  color: #1f3f5b;
+  padding: 0;
   cursor: pointer;
+}
+
+.icon {
+  height: fit-content;
+  transition: all 0.1s ease-in-out;
+}
+
+.iconOpen {
+  transform: rotate(0.5turn);
 }
 
 .subMenuOptions {
   list-style: none;
-  position: absolute;
+  position: static;
   display: none;
-  background-color: var(--color-neutral-white);
-  color: var(--color-neutral-very-dark-grayish-blue);
-  padding: 2rem 1.5rem;
+  flex-direction: column;
+  margin-top: 1.375rem;
+  width: 276px;
+  gap: 1.125rem;
+  padding: 1.375rem 0;
+  box-shadow: none;
+  background-color: #efeff1;
   font-family: "Ubuntu", sans-serif;
-  font-size: 0.875rem;
-  margin-top: 4rem;
-  gap: 1rem;
-  border-radius: 0.375em;
-  min-width: 10.5rem;
-  box-shadow: 0px 12px 20px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.subMenuOptionsOpen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .subLink {
-  font-weight: 400;
-  letter-spacing: 0.04em;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+
+  color: #4b5862;
   cursor: pointer;
 }
 
-.subLink:hover {
-  font-weight: 700;
-}
+@media screen and (min-width: 810px) {
+  .subMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
 
-.subMenu:hover .subMenuOptions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .mainLink {
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.875rem;
+    gap: 0.5rem;
+    letter-spacing: 0.09em;
+    font-weight: 500;
+    align-items: center;
+    padding: 1em 0;
+    cursor: pointer;
+  }
 
-/* .subMenuOptionsOpen {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
+  .subMenuOptions {
+    list-style: none;
+    position: absolute;
+    display: none;
+    background-color: var(--color-neutral-white);
+    color: var(--color-neutral-very-dark-grayish-blue);
+    padding: 2rem 1.5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.875rem;
+    margin-top: 4rem;
+    gap: 1rem;
+    border-radius: 0.375em;
+    min-width: 10.5rem;
+    box-shadow: 0px 12px 20px 6px rgba(0, 0, 0, 0.25);
+  }
 
-.subMenu::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  margin-top: 2rem;
-  height: 2rem;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 0;
-}
+  .subLink {
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+  }
 
-.subMenu:hover .icon {
-  transform: rotate(0.5turn);
-}
+  .subLink:hover {
+    font-weight: 700;
+  }
 
-.icon {
-  transition: all 0.1s ease-in-out;
+  .subMenu:hover .subMenuOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* .subMenuOptionsOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  .subMenu::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin-top: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  .subMenu:hover .icon {
+    transform: rotate(0.5turn);
+  }
+
+  .icon {
+    transition: all 0.1s ease-in-out;
+  }
 }

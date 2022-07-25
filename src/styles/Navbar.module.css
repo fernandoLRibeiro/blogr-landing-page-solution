@@ -46,6 +46,43 @@
   }
 
   .navigation {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 125px 100% auto;
+    width: 324px;
+    background-color: white;
+    color: var(--color-primary-very-dark-blue);
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 6px;
+    z-index: 9;
+    transition: all 0.1s ease-in;
+  }
+
+  .navigationOpen {
+    inset: 125px 24px auto;
+  }
+
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: fit-content;
+    padding: 0;
+    margin-bottom: 1.625rem;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-top: 2rem;
+    border-top: 2px solid #efeff1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
