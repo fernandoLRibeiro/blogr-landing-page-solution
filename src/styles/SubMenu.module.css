@@ -34,7 +34,7 @@
   display: none;
   flex-direction: column;
   margin-top: 1.375rem;
-  width: 276px;
+  min-width: 276px;
   gap: 1.125rem;
   padding: 1.375rem 0;
   box-shadow: none;
@@ -83,6 +83,7 @@
     align-items: center;
     padding: 1em 0;
     cursor: pointer;
+    color: var(--color-neutral-white);
   }
 
   .subMenuOptions {
@@ -102,9 +103,14 @@
   }
 
   .subLink {
+    font-family: "Ubuntu";
+
     font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
     letter-spacing: 0.04em;
-    cursor: pointer;
   }
 
   .subLink:hover {
