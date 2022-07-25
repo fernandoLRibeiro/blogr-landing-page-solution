@@ -8,16 +8,14 @@
   border-radius: 0px 100px;
   align-items: center;
   margin-top: 4.375rem;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3.625rem;
   padding: 0 10.875rem 0 7.875rem;
-  text-align: left;
 }
 
 .image {
   width: fit-content;
   height: fit-content;
-  margin-top: 2.5rem;
 }
 
 .article {
@@ -43,4 +41,46 @@
   letter-spacing: 0.0315em;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .middleSection {
+    background: url("../../public/images/bg-pattern-circles.svg"),
+      linear-gradient(180deg, #2c2d3f, #3f4164);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-top: 17.125rem;
+    background-size: 602px, auto;
+    background-position: 50% -14.875rem, center;
+    text-align: center;
+    padding: 0 2rem 7.125rem;
+    height: 625px;
+    gap: 0.75rem;
+  }
+
+  .image {
+    width: 375px;
+    margin-top: -12rem;
+  }
+
+  .article {
+    max-width: 19.25rem;
+    gap: 1.125rem;
+    padding: 0 1.625rem;
+  }
+
+  .articleHeading {
+    font-weight: 600;
+    font-size: 2.375rem;
+    line-height: 3.125rem;
+
+    letter-spacing: -0.026em;
+  }
+
+  .articleParagraph {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03em;
+  }
 }

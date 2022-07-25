@@ -2,7 +2,7 @@
   background-color: transparent;
   border: 0;
   outline: 0;
-  padding: 1em 0;
+  padding: 1rem 0;
 
   font-size: 1em;
   font-family: "Ubuntu", sans-serif;
@@ -37,4 +37,17 @@
 .outlined:hover {
   background-color: white;
   color: var(--color-primary-very-light-red);
+}
+
+@media screen and (max-width: 1024px) {
+  .Button {
+    padding: 0.875rem 0;
+    line-height: 1.125em;
+    letter-spacing: 0.0175em;
+  }
+
+  .primary,
+  .outline {
+    min-width: 8.5rem;
+  }
 }

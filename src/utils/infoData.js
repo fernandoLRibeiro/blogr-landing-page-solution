@@ -1,7 +1,7 @@
 const infoData = {
   firstInfoSection: {
     imgDesktop: "./images/illustration-editor-desktop.svg",
-    imgMobile: ".public/images/illustration-editor-mobile.svg",
+    imgMobile: "./images/illustration-editor-mobile.svg",
     articles: [
       {
         title: "Introducing an extensible editor",

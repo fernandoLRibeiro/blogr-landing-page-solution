@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/InfoSection.module.css";
 
 function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  window.addEventListener("resize", () => {
+    console.log(window.outerWidth);
+    if (window.outerWidth <= 1024) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  });
+
   return (
     <section
       className={`${styles.InfoSection} ${reverseLayout && styles.reverse}`}
@@ -15,7 +26,7 @@ function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout }) {
         ))}
       </div>
 
-      <img src={imgDesktop} className={styles.image} />
+      <img src={isMobile ? imgMobile : imgDesktop} className={styles.image} />
     </section>
   );
 }

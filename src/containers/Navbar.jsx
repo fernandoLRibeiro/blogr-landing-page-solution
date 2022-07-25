@@ -1,9 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import Button from "../components/Button";
 import SubMenu from "../components/SubMenu";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const subMenus = [
     {
       label: "Product",
@@ -43,6 +46,13 @@ const Navbar = () => {
           <Button primary>Sign Up</Button>
         </div>
       </nav>
+
+      <img
+        className={styles.mobileNavButton}
+        src={isOpen ? "./images/icon-close.svg" : "./images/icon-hamburger.svg"}
+        alt={isOpen ? "close" : "open"}
+        onClick={() => setIsOpen(!isOpen)}
+      />
     </header>
   );
 };

@@ -20,3 +20,13 @@
   color: #1f3f5b;
   top: 6rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-top: 6.5rem;
+  }
+
+  .mainHeading {
+    top: 0;
+  }
+}

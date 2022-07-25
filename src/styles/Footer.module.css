@@ -6,6 +6,7 @@
   gap: 11.375rem;
   text-align: left;
   margin-top: 7.75rem;
+  /* justify-content: space-between; */
 }
 
 .logo {
@@ -15,7 +16,9 @@
 
 .footerListsContainer {
   display: flex;
-  gap: 12.5rem;
+  max-width: 41rem;
+  width: 100%;
+  justify-content: space-between;
   margin-top: 0.5rem;
 }
 
@@ -54,4 +57,20 @@
 .footerLink:hover,
 .footerLink:active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    flex-direction: column;
+    padding: 4.625rem 2.375rem 5rem;
+    gap: 4.875rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerListsContainer {
+    flex-direction: column;
+    gap: 3.25rem;
+    align-items: center;
+  }
 }

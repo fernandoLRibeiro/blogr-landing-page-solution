@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <section className={styles.CTA}>
+    <section className={styles.HeroSection}>
       <Navbar />
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
