@@ -1,9 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import styles from "../styles/SubMenu.module.css";
 
 const SubMenu = ({ label, options }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    console.log(isOpen);
+  }, [isOpen]);
 
   return (
     <li className={styles.subMenu}>

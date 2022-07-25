@@ -6,6 +6,7 @@
   flex-direction: column;
   width: 100%;
   border-bottom-left-radius: 6.25rem;
+  color: var(--color-neutral-white);
 }
 
 .textContainer {

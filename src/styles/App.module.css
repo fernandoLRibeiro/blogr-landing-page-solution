@@ -1,3 +1,22 @@
 .App {
   text-align: center;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+}
+
+.mainHeading {
+  position: relative;
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: -0.0175em;
+
+  color: #1f3f5b;
+  top: 6rem;
+}

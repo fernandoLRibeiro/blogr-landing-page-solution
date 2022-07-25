@@ -34,8 +34,9 @@
 body {
   background-color: #fafafa;
   font-family: "Overpass", sans-serif;
-  color: var(--color-neutral-white);
+  /* color: var(--color-neutral-white); */
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 h1 {

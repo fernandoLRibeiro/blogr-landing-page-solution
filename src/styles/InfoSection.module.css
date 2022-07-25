@@ -1,0 +1,44 @@
+.InfoSection {
+  display: flex;
+  gap: 5.875rem;
+  align-items: center;
+  margin-left: 10.375rem;
+  text-align: left;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: 10.75rem;
+}
+
+.articlesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4.75rem;
+  min-width: 33.25rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.articleTitle {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 180%;
+
+  color: #1f3f5b;
+}
+
+.articleParagraph {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 175%;
+
+  letter-spacing: 0.03em;
+
+  color: #4b5862;
+}

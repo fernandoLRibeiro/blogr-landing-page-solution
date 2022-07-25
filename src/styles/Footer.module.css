@@ -1,0 +1,57 @@
+.Footer {
+  display: flex;
+  background: #24242c;
+  border-radius: 0px 100px 0px 0px;
+  padding: 70px 165px 78px;
+  gap: 11.375rem;
+  text-align: left;
+  margin-top: 7.75rem;
+}
+
+.logo {
+  width: fit-content;
+  height: fit-content;
+}
+
+.footerListsContainer {
+  display: flex;
+  gap: 12.5rem;
+  margin-top: 0.5rem;
+}
+
+.footerListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.footerListLabel {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+
+  color: #ffffff;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footerLink {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  cursor: pointer;
+  color: #c8c8cb;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  text-decoration: underline;
+}

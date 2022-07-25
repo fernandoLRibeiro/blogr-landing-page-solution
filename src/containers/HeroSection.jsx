@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../components/Button";
-import styles from "../styles/CTA.module.css";
+import styles from "../styles/HeroSection.module.css";
 import Navbar from "./Navbar";
 
-const CTA = () => {
+const HeroSection = () => {
   return (
-    <main className={styles.CTA}>
+    <section className={styles.CTA}>
       <Navbar />
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
@@ -19,8 +19,8 @@ const CTA = () => {
           <Button outlined>Learn More</Button>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default CTA;
+export default HeroSection;
