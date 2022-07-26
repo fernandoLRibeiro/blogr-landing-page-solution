@@ -29,7 +29,7 @@ const SubMenu = ({ label, options }) => {
 
   return (
     <li className={styles.subMenu}>
-      <a className={styles.mainLink} onClick={() => setIsOpen(!isOpen)}>
+      <a className={styles.mainLink} onClick={() => setIsOpen(!isOpen)} href>
         {label}
         <img
           src={
@@ -48,7 +48,9 @@ const SubMenu = ({ label, options }) => {
       >
         {options.map((option, index) => (
           <li className={styles.subMenuOption} key={index}>
-            <a className={styles.subLink}>{option}</a>
+            <a className={styles.subLink} href>
+              {option}
+            </a>
           </li>
         ))}
       </ul>

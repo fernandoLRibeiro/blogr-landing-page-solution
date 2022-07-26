@@ -28,7 +28,9 @@ function Footer() {
             <ul className={styles.footerList}>
               {list.links.map((link, index) => (
                 <li key={index}>
-                  <a className={styles.footerLink}>{link}</a>
+                  <a className={styles.footerLink} href>
+                    {link}
+                  </a>
                 </li>
               ))}
             </ul>
