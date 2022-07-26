@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/blogr-landing-page-solution-built-with-react-and-css-modules-FmjwhSCaUY](https://www.frontendmentor.io/solutions/blogr-landing-page-solution-built-with-react-and-css-modules-FmjwhSCaUY)
+- Live Site URL: [https://62e034cbd8ffa200be96b91c--beautiful-flan-e53314.netlify.app/](https://62e034cbd8ffa200be96b91c--beautiful-flan-e53314.netlify.app/)
 
 ## My process
 
