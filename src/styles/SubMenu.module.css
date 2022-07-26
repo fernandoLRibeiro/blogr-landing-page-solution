@@ -75,14 +75,21 @@
   .mainLink {
     display: flex;
     font-family: "Ubuntu", sans-serif;
-    font-size: 0.875rem;
+
     gap: 0.5rem;
-    letter-spacing: 0.09em;
+
     font-weight: 500;
     align-items: center;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     cursor: pointer;
     color: var(--color-neutral-white);
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.01em;
+
+    color: #ffffff;
   }
 
   .subMenuOptions {
@@ -94,7 +101,7 @@
     padding: 2rem 1.5rem;
     font-family: "Ubuntu", sans-serif;
     font-size: 0.875rem;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     gap: 1rem;
     border-radius: 0.375em;
     min-width: 10.5rem;

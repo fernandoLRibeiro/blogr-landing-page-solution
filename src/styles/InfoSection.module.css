@@ -26,21 +26,22 @@
 }
 
 .articleTitle {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.75rem;
-  line-height: 180%;
+  line-height: 2.1875rem;
+  letter-spacing: -0.0075em;
 
-  color: #1f3f5b;
+  color: var(--color-primary-very-dark-blue);
 }
 
 .articleParagraph {
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 175%;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
 
-  letter-spacing: 0.03em;
+  letter-spacing: 0.0625em;
 
-  color: #4b5862;
+  color: var(--color-neutral-very-dark-grayish-blue);
 }
 
 @media screen and (max-width: 1024px) {

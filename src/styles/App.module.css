@@ -6,20 +6,19 @@
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
+  margin-top: 1.4375rem;
 }
 
 .mainHeading {
   position: relative;
-  font-family: "Overpass";
-  font-style: normal;
+
   font-weight: 600;
   font-size: 2.375rem;
   line-height: 3rem;
   letter-spacing: -0.0175em;
 
-  color: #1f3f5b;
-  top: 6rem;
+  color: var(--color-primary-very-dark-blue);
+  top: 5.25rem;
 }
 
 @media screen and (max-width: 1024px) {
