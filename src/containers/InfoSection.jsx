@@ -17,7 +17,11 @@ function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout, alt }) {
     <section
       className={`${styles.InfoSection} ${reverseLayout && styles.reverse}`}
     >
-      <div className={styles.articlesContainer}>
+      <div
+        className={`${styles.articlesContainer} ${
+          reverseLayout && styles.articlesContainerReverse
+        }`}
+      >
         {articles.map((article, index) => (
           <article className={styles.article} key={index}>
             <h3 className={styles.articleTitle}>{article.title}</h3>

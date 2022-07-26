@@ -1,7 +1,7 @@
 .InfoSection {
   display: flex;
-  gap: 5.875rem;
-  align-items: center;
+  gap: 5.475rem;
+  align-items: flex-end;
   margin-left: 10.375rem;
   text-align: left;
 }
@@ -9,20 +9,26 @@
 .reverse {
   flex-direction: row-reverse;
   margin-left: 0;
-  margin-right: 10.75rem;
+  margin-right: 10.55rem;
+  gap: 2.5rem;
 }
 
 .articlesContainer {
   display: flex;
   flex-direction: column;
   gap: 4.75rem;
-  min-width: 33.25rem;
+  min-width: 33.5rem;
+  margin-bottom: 12.5rem;
+}
+
+.articlesContainerReverse {
+  margin-bottom: 11.3rem;
 }
 
 .article {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.45rem;
 }
 
 .articleTitle {

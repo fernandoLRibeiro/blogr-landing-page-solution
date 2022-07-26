@@ -7,12 +7,13 @@
   background-position: -212px -509px, 0 0;
   border-radius: 0px 100px;
   align-items: center;
-  margin: 4.25rem 0 4.125rem;
+  margin: 3.55rem 0 7.325rem;
   justify-content: space-between;
   gap: 3.625rem;
   padding: 0 10.875rem 0 7.875rem;
   text-align: left;
   color: var(--color-neutral-white);
+  position: relative;
 }
 
 .image {
@@ -26,6 +27,7 @@
   flex-direction: column;
   max-width: 33.125rem;
   gap: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .articleHeading {
