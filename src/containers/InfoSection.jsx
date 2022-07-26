@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/InfoSection.module.css";
 
-function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout }) {
+function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout, alt }) {
   const [isMobile, setIsMobile] = useState(false);
 
   window.addEventListener("resize", () => {
@@ -18,15 +18,19 @@ function InfoSection({ imgDesktop, imgMobile, articles, reverseLayout }) {
       className={`${styles.InfoSection} ${reverseLayout && styles.reverse}`}
     >
       <div className={styles.articlesContainer}>
-        {articles.map((article) => (
-          <article className={styles.article}>
+        {articles.map((article, index) => (
+          <article className={styles.article} key={index}>
             <h3 className={styles.articleTitle}>{article.title}</h3>
             <p className={styles.articleParagraph}>{article.text}</p>
           </article>
         ))}
       </div>
 
-      <img src={isMobile ? imgMobile : imgDesktop} className={styles.image} />
+      <img
+        src={isMobile ? imgMobile : imgDesktop}
+        className={styles.image}
+        alt={alt}
+      />
     </section>
   );
 }

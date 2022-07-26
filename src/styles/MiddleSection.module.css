@@ -11,6 +11,7 @@
   justify-content: space-between;
   gap: 3.625rem;
   padding: 0 10.875rem 0 7.875rem;
+  text-align: left;
 }
 
 .image {
@@ -36,7 +37,7 @@
 
 .articleParagraph {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
   flex-wrap: wrap;
   letter-spacing: 0.0315em;

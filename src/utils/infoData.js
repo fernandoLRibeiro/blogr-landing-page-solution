@@ -2,6 +2,7 @@ const infoData = {
   firstInfoSection: {
     imgDesktop: "./images/illustration-editor-desktop.svg",
     imgMobile: "./images/illustration-editor-mobile.svg",
+    alt: "Editor",
     articles: [
       {
         title: "Introducing an extensible editor",
@@ -17,6 +18,7 @@ const infoData = {
     reverseLayout: true,
     imgDesktop: "./images/illustration-laptop-desktop.svg",
     imgMobile: "./images/illustration-laptop-mobile.svg",
+    alt: "Desktop",
     articles: [
       {
         title: "Free, open, simple",

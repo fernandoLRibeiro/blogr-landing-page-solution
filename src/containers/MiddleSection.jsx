@@ -4,7 +4,11 @@ import styles from "../styles/MiddleSection.module.css";
 function MiddleSection() {
   return (
     <section className={styles.middleSection}>
-      <img src="./images/illustration-phones.svg" className={styles.image} />
+      <img
+        src="./images/illustration-phones.svg"
+        className={styles.image}
+        alt="Phones"
+      />
       <article className={styles.article}>
         <h3 className={styles.articleHeading}>
           State of the Art Infrastructure

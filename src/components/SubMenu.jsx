@@ -46,8 +46,8 @@ const SubMenu = ({ label, options }) => {
           isOpen && styles.subMenuOptionsOpen
         }`}
       >
-        {options.map((option) => (
-          <li className={styles.subMenuOption}>
+        {options.map((option, index) => (
+          <li className={styles.subMenuOption} key={index}>
             <a className={styles.subLink}>{option}</a>
           </li>
         ))}

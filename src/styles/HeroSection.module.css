@@ -76,4 +76,8 @@
     line-height: 1.75em;
     letter-spacing: -0.005em;
   }
+
+  .buttonContainer {
+    justify-content: center;
+  }
 }

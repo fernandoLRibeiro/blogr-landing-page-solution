@@ -58,7 +58,7 @@
   }
 
   .articlesContainer {
-    min-width: 0;
+    min-width: unset;
     gap: 2.75rem;
     align-items: center;
   }

@@ -49,8 +49,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    inset: 125px 100% auto;
-    width: 324px;
+    inset: 7.875rem 0 auto 100%;
+    width: 87.2vw;
     background-color: white;
     color: var(--color-primary-very-dark-blue);
     align-items: center;
@@ -62,7 +62,7 @@
   }
 
   .navigationOpen {
-    inset: 125px 24px auto;
+    inset: 7.875rem 6.4vw auto;
   }
 
   .mainMenu {

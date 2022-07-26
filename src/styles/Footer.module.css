@@ -2,11 +2,14 @@
   display: flex;
   background: #24242c;
   border-radius: 0px 100px 0px 0px;
-  padding: 70px 165px 78px;
+  padding: 4.375rem 10.375rem 4.875rem;
   gap: 11.375rem;
   text-align: left;
   margin-top: 7.75rem;
-  /* justify-content: space-between; */
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
 
 .logo {
@@ -29,11 +32,6 @@
 }
 
 .footerListLabel {
-  font-family: "Ubuntu";
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 17px;
-
   color: #ffffff;
 }
 
@@ -46,10 +44,7 @@
 }
 
 .footerLink {
-  font-family: "Ubuntu";
   font-weight: 400;
-  font-size: 15px;
-  line-height: 17px;
   cursor: pointer;
   color: #c8c8cb;
 }
