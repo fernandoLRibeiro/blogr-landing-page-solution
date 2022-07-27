@@ -4,6 +4,8 @@
   align-items: center;
   margin: 3.75rem 10rem 0 10.4375rem;
   gap: 1.5rem;
+  width: 100vw;
+  position: relative;
 }
 
 .navigation {
