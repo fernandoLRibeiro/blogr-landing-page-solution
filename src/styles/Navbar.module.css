@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3.75rem 10rem 0 10.4375rem;
+  margin: 3.75rem 10rem 0 11.6vw;
   gap: 1.5rem;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
 }
 
