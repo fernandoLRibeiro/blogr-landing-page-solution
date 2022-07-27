@@ -24,10 +24,12 @@
 
 @media screen and (max-width: 1024px) {
   .main {
-    margin-top: 6.5rem;
+    margin-top: 6rem;
+    margin-right: 0;
   }
 
   .mainHeading {
+    font-size: 1.65rem;
     top: 0;
   }
 }

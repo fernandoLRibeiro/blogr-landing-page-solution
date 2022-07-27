@@ -71,11 +71,25 @@
     gap: 4.875rem;
     align-items: center;
     text-align: center;
+    margin-top: 5.9rem;
   }
 
   .footerListsContainer {
     flex-direction: column;
-    gap: 3.25rem;
+    gap: 3.4rem;
     align-items: center;
+    margin-top: 0.25rem;
+  }
+
+  .footerListLabel {
+    font-size: 1.1375rem;
+  }
+
+  .footerList {
+    gap: 0.9rem;
+  }
+
+  .footerLink {
+    font-size: 1.15rem;
   }
 }
