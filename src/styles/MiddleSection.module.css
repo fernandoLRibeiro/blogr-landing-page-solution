@@ -58,10 +58,11 @@
     background-position: 50% -14.875rem, center;
     text-align: center;
     padding: 0 2rem 7.125rem;
-    height: 626px;
+    min-height: 39.125rem;
     gap: 0.15rem;
     justify-content: flex-start;
     margin-bottom: 3.9rem;
+    height: unset;
   }
 
   .image {
@@ -71,6 +72,7 @@
 
   .article {
     gap: 1.125rem;
+    max-width: 20rem;
   }
 
   .articleHeading {
